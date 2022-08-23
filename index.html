@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neviot">
+  <title>Neviot</title>
+
+  <!-- Style (Vendor) -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/elevate-framework.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<body class="home-page">
+
+  <!-- Bg -->
+  <div class="bg">
+    <picture>
+      <source media="(min-width:1024px)" srcset="img/bg.jpg">
+      <img src="img/bg-mobile.jpg" alt="neviot-img">
+    </picture>
+  </div>
+
+  <!-- Text -->
+  <div class="text">
+    <picture>
+      <source media="(min-width:1024px)" srcset="img/text.png">
+      <img src="img/text-mobile.png" alt="חדש מנביעות!
+      0 קלוריות
+      בטעמי אשכולית
+      ולמון ליים" title="חדש מנביעות!
+      0 קלוריות
+      בטעמי אשכולית
+      ולמון ליים">
+    </picture>
+  </div>
+
+  <!-- Text Mobile -->
+  <div class="text-mobile d-mobile">
+    <p>המים המינרליים של נביעות
+      <br> עם טעמים שירעננו לך את היום
+      <br>
+      וכל הטוב הזה עם
+      <span class="text-yellow">
+        0 קלוריות!
+      </span>
+    </p>
+  </div>
+
+  <!-- Yellow Btn -->
+  <div class="yellow-btn">
+    <a href="#">
+      <img src="img/yellow-btn.png" alt="neviot-img">
+    </a>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo d-mobile">
+    <img src="img/logo.png" alt="neviot-img">
+  </div>
+
+  <!-- Video -->
+  <div class="video">
+    <video autoplay loop muted playsinline preload="metadata">
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <a href="#" class="popup-toggler" data-popup="#videoPopup">
+      <img loading="lazy" src="img/play-icon.png" alt="neviot-img">
+    </a>
+  </div>
+
+  <!-- Form -->
+  <div class="form">
+    <h2>עדיין לא טעמת?
+      <br> סידרנו לך בקבוק במתנה!</h2>
+    <form>
+      <div class="d-desktop">
+        <input type="text" placeholder="שם פרטי">
+      </div>
+      <div>
+        <input type="text" placeholder="שם משפחה">
+      </div>
+      <div>
+        <input type="text" placeholder="טלפון">
+      </div>
+      <div>
+        <input type="text" placeholder="אימייל">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-1">
+        <label for="checkbox-1">
+          אישור קבלת תוכן פרסומי
+        </label>
+      </div>
+      <div>
+        <button type="submit" class="btn">לקבלת קופון >></button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Video Popup -->
+  <div class="popup video-popup" id="videoPopup">
+    <!-- Close -->
+    <div class="popup-close">
+      <a href="#">
+        <img data-src="img/close-white.svg" alt="neviot-img" class="lazy">
+      </a>
+    </div>
+    <!-- Video -->
+    <div class="ratio-16-9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oL6JxSE-Z4E" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Script (Vendor) -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+
+  <!-- Script -->
+  <script src="js/elevate-framework.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Lazy Loading -->
+  <script src="js/lazyload.min.js"></script>
+  <script>
+    (function () {
+      ll = new LazyLoad({});
+    })();
+  </script>
+
+</body>
+
+</html>
